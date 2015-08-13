@@ -1,0 +1,379 @@
+@charset "utf-8";
+/*--------------
+	RESET
+--------------*/
+
+/*--------------
+GLOBAL TYPOGRAPHY
+---------------*/
+body{
+	font:12px/18px Arial 'Microsoft YaHei';
+	/*skin*//*line-height: 768px;/*ff*/
+	background:url("images/bg3.jpg") top center;
+	background-color: #F0EFEB;
+	overflow-y:scroll; *overflow:auto;
+	overflow-x: hidden;
+}/*body{line-height: 150%;}*/
+p{
+	margin:0 0 0 20px;
+}
+h2{
+	font-size: 32px;
+	color:#c60;
+	padding-top: 4px;
+	margin-bottom:30px;
+}
+h3{
+	font-size: 22px;
+	color:#c60;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+a{
+	color:#000;
+	text-decoration:none;
+}
+	a:hover{color:#c60;}
+
+/*-------------
+	module
+-------------*/
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+input[type=checkbox]{
+	visibility:hidden;
+}
+
+/*skin*/
+textarea {
+    resize: none;
+}
+
+/*-------------
+	STRUCTURE
+-------------*/
+.lightup{
+	height:100%;
+	background:url("images/bg3.jpg") top center;
+	background-color: #F0EFEB;
+	min-width:;
+}
+#top{
+	width:100%;
+	height:30px;
+	min-width:1366px;
+}
+#main{
+	width:100%;
+	min-width:1680px;
+	height:1680px;
+}
+/*------------
+	HEADER
+------------*/
+.header{
+	z-index:9999;
+	top:0;
+	left:0;
+	border-top:2px solid #336699;
+	width:100%;
+	height:34px;
+	padding-top:5px;
+	background-color:#fff;
+	box-shadow: 0 0 1px 0px #9090AA,0 0 6px 2px #9090AA;
+	position:fixed;
+}
+.header .topnav{
+	width:1000px;
+	height:33px;
+	margin:0 auto;
+	position:relative;
+}
+	.header .topnav img{
+		vertical-align:bottom;
+		margin:1px 0 -1px;
+	}
+.header .small_logo{
+	float:left;
+	top:auto;
+	left:auto;
+	margin:-6px 20px 0 0;
+}
+.header .search{
+	float:left;
+	margin-left:50px;
+	height:33px;
+	line-height:28px;
+}
+.header .sch_input{
+	background-color: #f2f2f5;
+    border: 1px solid #4E8DCA;
+    box-shadow: none;
+    color: #000;
+    height: 26px;
+    line-height: 20px;
+    margin-left: 10px;
+    outline-style: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.header .nav{
+	float:right;
+}
+.header .nav ul li{
+	float:left;
+	font-size:18px; 
+	margin:0 14px;
+	height:30px;
+	line-height:25px;
+}
+.header .nav ul li a:hover{
+	background-color:#F2F2F5;
+}
+/*-------------
+	MAIN
+--------------*/
+.main{
+	margin:0 auto;
+	padding:30px 0 0;
+	width:1000px;
+	min-height:680px;
+	background-color: rgba(0, 45, 95, 0.25);
+	font-size: 0;
+    letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+}
+.main_left, .main_right, .main_center, .main_leftnav{
+	display: inline-block;
+	font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+}
+.main_left{
+	width:150px;
+	margin-top:20px;
+}
+
+/*--MAIN-main_left--*/
+
+.main_leftlogo{
+/*	position:absolute;
+	top:30px;
+	left:10px;*/
+	width:221px;
+	height:auto;
+	margin:0 auto;
+}
+
+a.b_logo{	
+	display:block;
+	width:221px;
+	height:245px;
+	margin-left:-100px;
+	background: url(images/two_logo.png) no-repeat top left;}
+	/*text-indent:-99px;hover相关*/
+/*a.b_logo img{
+	background:none;
+	border:none;
+	margin-right:50px;
+	padding:5px;
+}*hover相关/*/
+div.big_logo a.b_logo{}
+div.big_logo a.b_logo:hover{
+	background-position:top right; 
+}
+
+.main_leftnav{
+	width:150px;
+
+}
+
+.leftnav_group{}
+.main_left_Atest{}
+
+.UI_scrollView{position:relative;}
+
+
+.UI_scrollView .UI_scrollContainer {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.UI_scrollContent{
+    height: 100%;
+    margin-right: -30px;
+    overflow-x: hidden;
+    padding-right: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.lev_Box{
+    border-bottom-width: 1px;
+    border-color:rgba(255, 255, 255, 0.1);
+}
+
+.lev a{
+    display: block;
+    font-size: 12px;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    padding: 0 0 0 13px;
+    position: relative;
+    text-decoration: none;
+}
+
+.lev .levtxt {
+    cursor: pointer;
+    display: inline-block;
+    max-width: 82px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*--MAIN-main_center--*/
+.main_center{
+	width:600px;
+	height:1600px;
+	margin:0 auto;
+}
+
+.send_note {
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+    height: 140px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 10px 10px 10px;
+    background-color:#fff;
+}
+
+.send_note .input{
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15) inset;
+    height: auto;
+    padding: 5px;
+    position: relative;
+    border-color:#ccc;
+}
+
+.send_note .input .L_input{
+	background: transparent none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+    font-size: 14px;
+    height: 90px;
+    line-height: 18px;
+    outline: medium none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    width: 100%;
+    word-wrap: break-word;
+}
+.func{
+    float: right;
+    padding: 7px 0 0;
+    white-space: nowrap;
+    width: 280px;
+}
+
+.limits{
+}
+
+.kind{
+    float: left;
+    padding: 7px 0 0;
+    width: 300px;
+    white-space: nowrap;
+}
+
+.kind a{
+	display:inline-block;
+	padding:7px 0 0 32px;
+	width:38px;
+	height:30px;
+}
+
+.send_note a.sendface{
+	background:url(images/icon_sendfac2.png) top left no-repeat;
+}
+.send_note a.sendpic{
+	background:url(images/icon_sendpic2.png) top left no-repeat;
+}
+.send_note a.sendvoi{
+	background:url(images/icon_sendvoi2.png) top left no-repeat;
+}
+.send_note a.sendvid{
+	background:url(images/icon_sendvid2.png) top left no-repeat;
+}
+.send_note a.sendface:hover{
+	background:url(images/icon_sendfac1.png) top left no-repeat;
+}
+.send_note a.sendpic:hover{
+	background:url(images/icon_sendpic1.png) top left no-repeat;
+}
+.send_note a.sendvoi:hover{
+	background:url(images/icon_sendvoi1.png) top left no-repeat;
+}
+.send_note a.sendvid:hover{
+	background:url(images/icon_sendvid1.png) top left no-repeat;
+}
+/*---sendnote---func---*/
+.checkboxSecr, .checkboxLigh{
+	display:inline-block;
+	width:38px;
+	height:30px;
+	position:relative;
+	padding:7px 0 0 32px;
+}
+.checkboxSecr label, .checkboxLigh label{
+	width:38px;
+	height:30px;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:7px 0 0 32px;
+}
+/*---sendnote---secrect---*/
+.checkboxSecr label{
+	background:url(images/icon_sendsecr1.png) top left no-repeat;
+}
+	.checkboxSecr label:hover{
+		background:url(images/icon_sendsecr2.png) top left no-repeat;
+	}
+	.checkboxSecr input[type=checkbox]:checked + label{
+		background:url(images/icon_sendsecr2.png) top left no-repeat;
+		
+}
+/*---sendnote---light---*/
+.checkboxLigh label{
+	background:url(images/icon_sendligh1.png) top left no-repeat;
+}
+	.checkboxLigh label:hover{
+		background:url(images/icon_sendligh2.png) top left no-repeat;
+	}
+	.checkboxLigh input[type=checkbox]:checked + label{
+		background:url(images/icon_sendligh2.png) top left no-repeat;
+	}
+
+/*--MAIN-main_right--*/
+
+.main_right{
+	float:right;
+	width:250px;
+	margin:0 auto;
+}
